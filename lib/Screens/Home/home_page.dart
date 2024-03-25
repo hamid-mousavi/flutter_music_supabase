@@ -13,7 +13,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppTheme.backgroundColor,
         leading: const Icon(CupertinoIcons.search),
         title: const Text('data'),
         actions: [const Icon(CupertinoIcons.ellipsis_vertical)],

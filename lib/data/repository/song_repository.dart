@@ -1,5 +1,5 @@
 import 'package:music/data/Common/httpclient.dart';
-import 'package:music/data/Services/Song_service.dart';
+import 'package:music/data/Services/song/Song_service.dart';
 import 'package:music/data/model/song.dart';
 import 'package:music/data/repository/i_song_repository.dart';
 
@@ -38,5 +38,10 @@ class SongRepository implements ISongRepository {
   @override
   Future<List<Song>> search(String param) {
     return dataSource.search(param);
+  }
+
+  @override
+  Future<String> upladFile(String fileName, myFile) {
+    return dataSource.upladFile(fileName, myFile);
   }
 }

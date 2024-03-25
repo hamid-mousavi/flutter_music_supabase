@@ -1,3 +1,5 @@
+import 'package:music/data/model/Artist.dart';
+
 class Song {
   int? id;
   String? createdAt;
@@ -5,6 +7,9 @@ class Song {
   String? songPath;
   int? artistId;
   String? test;
+  Artist? artist;
+
+  bool deleteLoading = true;
 
   Song(
       {this.id,

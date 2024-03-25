@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:music/Screens/Auth/Auth.dart';
-import 'package:music/Screens/Crud/crud_screen.dart';
+import 'package:music/Screens/Admin/add_item/AddSong.dart';
+import 'package:music/Screens/Admin/HomeAdmin/items.dart';
 import 'package:music/Screens/Home/home_page.dart';
 import 'package:music/Screens/profile/profile_screen.dart';
 
@@ -59,7 +60,7 @@ class _RootScreenState extends State<RootScreen> {
               _navigator(
                 _cartKey,
                 cartIndex,
-                const CrudScreen(),
+                MusicItems(),
               ),
               _navigator(
                 _profileKey,

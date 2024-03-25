@@ -7,4 +7,5 @@ abstract class ISongRepository {
   Future<List<Song>> search(String param);
   Future<void> insertData(String title, String path, int artistId);
   Future<void> deleteData(int id);
+  Future<String> upladFile(String fileName, dynamic myFile);
 }
